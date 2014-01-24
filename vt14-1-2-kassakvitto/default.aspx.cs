@@ -21,12 +21,12 @@ namespace vt14_1_2_kassakvitto
             {
                 Receipt MyReceipt = new Receipt(Double.Parse(AmountTextBox.Text));
                 
-                SubtotalLiteral.Text = MyReceipt.Subtotal.ToString();
-                DiscountRateLiteral.Text = MyReceipt.DiscountRate.ToString();
-                MoneyOffLiteral.Text = MyReceipt.MoneyOff.ToString();
-                TotalLiteral.Text = MyReceipt.Total.ToString();
+                SubtotalLiteral.Text = String.Format("{0:c}", MyReceipt.Subtotal);
+                DiscountRateLiteral.Text = String.Format("{0:p0}", MyReceipt.DiscountRate);
+                MoneyOffLiteral.Text = String.Format("{0:c}", MyReceipt.MoneyOff);
+                TotalLiteral.Text = String.Format("{0:c}", MyReceipt.Total);
                 
-                ReceiptPlaceHolder.Visible = true;
+                ReceiptPanel.Visible = true;
             }
         }
     }

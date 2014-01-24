@@ -66,6 +66,7 @@
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.0.3.js" />
     <Content Include="Scripts\jquery-2.0.3.min.js" />
+    <Content Include="Scripts\script.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

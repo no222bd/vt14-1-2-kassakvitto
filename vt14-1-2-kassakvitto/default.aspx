@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="vt14_1_2_kassakvitto._default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="vt14_1_2_kassakvitto._default" ViewStateMode="Disabled" %>
 
 <!DOCTYPE html>
 
@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Kassakvitto</h1>
-    <form id="form1" runat="server" defaultbutton="CalculateButton" defaultfocus="AmountTextBox">
+    <form id="form1" runat="server" defaultbutton="CalculateButton">
         <div>
             <p>
                 <asp:Label ID="InputLabel" runat="server" Text="Total köpesumma:" AssociatedControlID="AmountTextBox"></asp:Label>
@@ -22,31 +22,30 @@
                 <asp:Button ID="CalculateButton" runat="server" Text="Beräkna rabatt" OnClick="CalculateButton_Click" />
             </p>
 
+            <asp:Panel ID="ReceiptPanel" runat="server" Visible="False">
+                <h2>Kvitto</h2>
+                <p>Carrefour Malmö</p>
+                <p>Tel: 040-154578</p>
+                <p>Öppettid 9-22</p>
 
-            <asp:PlaceHolder ID="ReceiptPlaceHolder" runat="server" Visible="False">
-
-            <h2>Kvitto</h2>
-            <p>Nisses SuperMarket</p>
-            <p>Tel:</p>
-            <p>Öppet 9-22</p>
-
-            <p>Totalt</p>
-            <asp:Literal ID="SubtotalLiteral" runat="server"></asp:Literal>
+                <p>Totalt</p>
+                <asp:Literal ID="SubtotalLiteral" runat="server"></asp:Literal>
             
-            <p>Rabattsats</p>
-            <asp:Literal ID="DiscountRateLiteral" runat="server"></asp:Literal>
+                <p>Rabattsats</p>
+                <asp:Literal ID="DiscountRateLiteral" runat="server"></asp:Literal>
             
-            <p>Rabatt</p>
-            <asp:Literal ID="MoneyOffLiteral" runat="server"></asp:Literal>
+                <p>Rabatt</p>
+                <asp:Literal ID="MoneyOffLiteral" runat="server"></asp:Literal>
             
-            <p>Att betala</p>
-            <asp:Literal ID="TotalLiteral" runat="server"></asp:Literal>
+                <p>Att betala</p>
+                <asp:Literal ID="TotalLiteral" runat="server"></asp:Literal>
             
-            <p>Org.nr 781105-4477</p>
-            <p>Välkommen åter!</p>
-
-                </asp:PlaceHolder>
+                <p>ORG.NR 551015-4477</p>
+                <p>Välkommen åter!</p>
+            </asp:Panel>
         </div>
     </form>
+
+    <script src="Scripts/script.js"></script>
 </body>
 </html>
