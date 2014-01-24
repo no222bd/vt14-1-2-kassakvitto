@@ -21,6 +21,31 @@
             <p>
                 <asp:Button ID="CalculateButton" runat="server" Text="Beräkna rabatt" OnClick="CalculateButton_Click" />
             </p>
+
+
+            <asp:PlaceHolder ID="ReceiptPlaceHolder" runat="server" Visible="False">
+
+            <h2>Kvitto</h2>
+            <p>Nisses SuperMarket</p>
+            <p>Tel:</p>
+            <p>Öppet 9-22</p>
+
+            <p>Totalt</p>
+            <asp:Literal ID="SubtotalLiteral" runat="server"></asp:Literal>
+            
+            <p>Rabattsats</p>
+            <asp:Literal ID="DiscountRateLiteral" runat="server"></asp:Literal>
+            
+            <p>Rabatt</p>
+            <asp:Literal ID="MoneyOffLiteral" runat="server"></asp:Literal>
+            
+            <p>Att betala</p>
+            <asp:Literal ID="TotalLiteral" runat="server"></asp:Literal>
+            
+            <p>Org.nr 781105-4477</p>
+            <p>Välkommen åter!</p>
+
+                </asp:PlaceHolder>
         </div>
     </form>
 </body>

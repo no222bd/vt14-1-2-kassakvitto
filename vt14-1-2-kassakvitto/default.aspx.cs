@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using vt14_1_2_kassakvitto.Model;
 
 namespace vt14_1_2_kassakvitto
 {
@@ -17,14 +18,15 @@ namespace vt14_1_2_kassakvitto
         protected void CalculateButton_Click(object sender, EventArgs e)
         {
             if (IsValid)
-            { 
-            
-            
-            
-            
-            
-            
-            
+            {
+                Receipt MyReceipt = new Receipt(Double.Parse(AmountTextBox.Text));
+                
+                SubtotalLiteral.Text = MyReceipt.Subtotal.ToString();
+                DiscountRateLiteral.Text = MyReceipt.DiscountRate.ToString();
+                MoneyOffLiteral.Text = MyReceipt.MoneyOff.ToString();
+                TotalLiteral.Text = MyReceipt.Total.ToString();
+                
+                ReceiptPlaceHolder.Visible = true;
             }
         }
     }
