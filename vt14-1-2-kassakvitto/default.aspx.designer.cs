@@ -76,39 +76,39 @@ namespace vt14_1_2_kassakvitto {
         protected global::System.Web.UI.WebControls.Panel ReceiptPanel;
         
         /// <summary>
-        /// SubtotalLiteral control.
+        /// SubtotalLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal SubtotalLiteral;
+        protected global::System.Web.UI.WebControls.Label SubtotalLabel;
         
         /// <summary>
-        /// DiscountRateLiteral control.
+        /// DiscountRateLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal DiscountRateLiteral;
+        protected global::System.Web.UI.WebControls.Label DiscountRateLabel;
         
         /// <summary>
-        /// MoneyOffLiteral control.
+        /// MoneyOffLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal MoneyOffLiteral;
+        protected global::System.Web.UI.WebControls.Label MoneyOffLabel;
         
         /// <summary>
-        /// TotalLiteral control.
+        /// TotalLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal TotalLiteral;
+        protected global::System.Web.UI.WebControls.Label TotalLabel;
     }
 }

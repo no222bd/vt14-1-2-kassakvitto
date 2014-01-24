@@ -1,0 +1,82 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #555;
+    background-color: whitesmoke;
+    font-size: 1em;
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 50px 0 -15px;
+}
+
+#creator {
+    font-style:italic;
+    margin: 25px;
+}
+
+#AmountTextBox {
+    width: 100px;
+    bor der: 3px solid #555;
+    font-s ize: 1.5em;
+    font-family: Arial, sans-serif;
+    color: #555;
+}
+
+#CalculateButton {
+    padding: 10px;
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #555;
+}
+
+#ReceiptPanel {
+    border: 3px solid #555;
+    background-color: white;
+    width: 300px;
+    display: inline-block;
+    padding: 15px;
+}
+
+h2 {
+ font-size: 2em;
+ margin: 25px 0;
+}
+
+.errorMessage {
+    font-size: 2em;
+    color: red;
+}
+
+.validationError {
+    font-weight: bold;
+    color: red;
+}
+
+#output {
+    overflow: auto;
+    padding: 15px 0;
+    border-top: 2px dashed #555;
+    border-bottom: 2px dashed #555;
+}
+
+#output span:nth-child(3n+2) {
+    float: right;
+    clear: right;
+}
+
+#output span:nth-child(3n+1) {
+    float: left;
+    clear: left;
+}
